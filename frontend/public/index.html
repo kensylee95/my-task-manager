@@ -1,0 +1,107 @@
+<!-- // frontend/public/index.html-->
+<!DOCTYPE html>
+<!--HTML-->
+<html lang="en">
+<!--begin::Head-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="./assets/css/plugins.bundle.css" rel="stylesheet" type="text/css" />
+  <link href="./assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Task Master | Login</title>
+</head>
+<!--end::Head-->
+
+<!--begin::body-->
+
+<body>
+  <!--begin::container-->
+  <div class="container" id="container">
+    <!--begin::sign-up-->
+    <div class="form-container sign-up">
+      <form>
+        <h1 class="fw-bolder fs-1">Create Account</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span class="fw-bolder mb-2"> OR </span>
+        <span class="fw-semibold fs-6">use your email for registeration</span>
+        <input type="text" name="full_name" id="full_name" placeholder="Full Name" />
+        <div class="row">
+          <div class="col-xxl-6">
+            <input type="text" name="gender" placeholder="Male/Female" />
+          </div>
+          <div class="col-xxl-6">
+            <input type="number" name="contact" placeholder="+234 000 0000 000" />
+          </div>
+        </div>
+        <input type="email" name="email" placeholder="Email" />
+        <div class="row">
+          <div class="col-xxl-6">
+            <input type="text" name="user_id" id="user_id" placeholder="User ID" readonly/>
+          </div>
+          <div class="col-xxl-6">
+            <input type="password" name="password" placeholder="************" />
+          </div>
+        </div>
+        <button>Sign Up</button>
+      </form>
+    </div>
+    <!--end::sign-up-->
+
+    <!--begin::sign-in-->
+    <div class="form-container sign-in">
+      <form>
+        <h1 class="fw-bolder fs-1">Sign In</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span class="fw-bolder mb-2"> OR </span>
+        <span class="fw-semibold fs-6">Login with Email & Password</span>
+        <input type="email" name="email" placeholder="Email" />
+        <input type="password" name="password" placeholder="Password" />
+        <a href="#" class="fw-semibold" style="color: red">Forget Your Password?</a>
+        <button>Sign In</button>
+      </form>
+    </div>
+    <!--end::sign-in-->
+
+    <!--end::toggle-container-->
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1 class="fw-bolder text-light fs-1 d-block">Welcome Back!</h1>
+          <p>Enter your personal details to use all of site features</p>
+          <button class="hidden" id="login">Sign In</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <span class="fw-bolder text-light fs-1 d-block">Task Management System!</span>
+          <p>
+            Register with your personal details to use all of site features
+          </p>
+          <button class="hidden" id="register">Sign Up</button>
+        </div>
+      </div>
+    </div>
+    <!--end::toggle-container-->
+  </div>
+  <!--end::container-->
+<script src="./assets/js/generate.userid.js"></script>
+  <!--begin::page script-->
+  <script src="./assets/js/toggle.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/plugins.bundle.js"></script>
+  <!--end::page script-->
+</body>
+<!--end::body-->
+
+</html>

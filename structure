@@ -1,0 +1,57 @@
+TaskMaster/
+├── backend/
+│   ├── node_modules/
+│   ├── config/
+│   │   └── database.js          # Database connection setup
+│   ├── controllers/
+│   │   ├── authController.js    # Authentication-related operations
+│   │   └── taskController.js    # Task CRUD operations
+│   ├── models/
+│   │   ├── User.js              # User schema/model
+│   │   └── Task.js              # Task schema/model
+│   ├── routes/
+│   │   ├── auth.js              # Authentication routes
+│   │   └── tasks.js             # Task management routes
+│   ├── utils/
+│   │   ├── jwt.js               # JWT helper functions for token generation
+│   │   └── errors.js            # Custom error classes
+│   ├── middleware/
+│   │   └── authMiddleware.js    # JWT verification middleware
+│   ├── tests/
+│   │   ├── auth.test.js         # Authentication tests with Jest & Supertest
+│   │   └── task.test.js         # Task CRUD tests with Jest & Supertest
+│   ├── app.js
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── .gitignore                   # Express app setup and middleware
+│   ├── server.js                # Server entry point
+│   └── .env                     # Environment variables (e.g., JWT secrets, database URL)
+├── frontend/
+│   ├── public/
+│   │   ├── assets/
+│   │   │   ├── css/
+│   │   │   │   ├── style.bundle.css
+│   │   │   │   └── styles.css
+│   │   │   ├── icons/
+│   │   │   ├── js
+│   │   │   │   ├── script.js
+│   │   │   │   ├── taskmaster.report.js
+│   │   │   │   └── toggle.js       
+│   │   ├── pages/
+│   │   │   ├── create-task.html
+│   │   │   ├── dashboard.hmtl
+│   │   │   └── task-report.hmtl 
+│   │   └── index.html                 # Main JavaScript file for frontend logic
+│   ├── tests/
+│   │   ├── login.test.js        # Unit test for login (with fetch mock)
+│   │   └── task.test.js         # Unit test for task management (with fetch mock)
+│   └── cypress/
+│       ├── integration/
+│       │   ├── auth.spec.js     # Cypress E2E tests for auth flow
+│       │   └── task.spec.js     # Cypress E2E tests for task flow
+│       └── support/
+│           └── commands.js      # Custom commands for Cypress
+├── cypress.json                 # Cypress configuration file
+├── package.json                 # Project dependencies and scripts
+├── README.md 
+└── structure                   # Project documentation
